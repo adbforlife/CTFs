@@ -1,0 +1,316 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #f8f8f8;
+    background: url(../img/background.jpg) no-repeat fixed;
+    background-size: cover;    
+    overflow: hidden;
+}
+#background_container {
+    background: url(../img/background.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 0px;
+    border-radius: 7px;
+}
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 7px;
+    background: rgba(255, 255, 255, 1);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255, 255, 255, 1); 
+}
+a {
+    text-decoration: none;
+    color: #666;
+}
+a:hover {
+    color: #999;
+}
+p {
+    line-height: 2em;
+    margin: 0 0 20px;
+}
+.contents {
+    width: 100%;
+    /* min-height: 100%; */
+    /* width: auto; */
+    height: 100%;
+    background: url(../img/background.jpg) no-repeat fixed;
+    background-size: cover;
+}
+#book_content {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20 50 50 50;
+    height: 100%;
+    /* overflow: auto; */
+}
+#header_text {
+    font-size: 1.4em;
+    text-align: center;
+    padding-bottom: 1%;
+}
+.contents .h1 {
+    margin: 10px 0 20px;
+    text-align: center;
+    color: #fff;
+    text-shadow: #000 0px 2px 4px;
+}
+.console {
+    display: block;
+    margin: auto;
+    height: 80%;
+    max-width: 70%;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 20px 70px;
+    clear: both;
+    overflow: hidden;
+    position: relative;
+    top: 9%;
+}
+.left {
+    float: left;
+    width: 50%;
+    height: 100%;
+    margin-left: 0%;
+}
+.right {
+    background-color: rgba(255, 255, 255, 0);
+    float: left;
+    min-height: 100%;
+    width: 50%;
+    font-family: 'Merriweather', serif;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+@media only screen and (orientation: portrait){
+   .right {  
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box; 
+        float: none;
+        margin-right: 0;
+        width: auto;
+        border: 0;
+        height: 50%;
+        overflow: auto;
+    }
+   .left { 
+        float: none;
+        margin-right: 0;
+        width: auto;
+        border: 0;
+        height: 50%;
+    }
+    .text-body {
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.85);
+        padding: 10px;
+        color: #f0f0f0;
+        text-shadow: #000 0px 1px 0px;
+        line-height: 1.3em;
+        text-align: left;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .console {
+        display: block;
+        margin: auto;
+        height: 90%;
+        max-width: 80%;
+        border-radius: 7px;
+        box-shadow: rgba(0, 0, 0, 0.8) 0px 20px 70px;
+        clear: both;
+        overflow: hidden;
+        position: relative;
+        top: 5%;
+    }
+}
+@media only screen and (max-width: 564px) {
+    .title {
+        display: none;
+    }
+}
+#after_book {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* padding: 0 50; */
+    bottom: 20;
+    height: 30%;
+    width: 100%;
+    margin-top: 20;
+}
+
+.title-bar {
+    position: relative;
+    height: 15px;
+    padding: 5px 7.5px;
+    font-family: "Lucida Grande", sans-serif;
+    font-size: 0.8em;
+    text-align: center;
+    text-shadow: rgba(255, 255, 255, 0.8) 0px 1px 0px;
+    background-color: #ffffff;
+    box-shadow: inset rgba(255, 255, 255, 0.7) 0px 1px 1px;
+    border-bottom: #6a6a6a 1px solid;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#soundcloud {
+    opacity: 0;
+    display: none;
+    padding: 20 0 50 0;
+}
+.title:hover {
+    cursor: default;
+}
+.text-body {
+    position: absolute;
+    width: 98%;
+    top: 25px;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 1%;
+    color: #f0f0f0;
+    text-shadow: #000 0px 1px 0px;
+    font-family: "Courier New";
+    font-size: 1em;
+    line-height: 1.3em;
+    text-align: left;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#header {
+    font-size: 1.4em;
+    padding: 3%;
+    text-align: center;
+}
+.h2 {
+    margin: 10px 0;
+}
+.note {
+    text-align: center;
+}
+#red_button {
+    background-color: rgba(255, 82, 93, 1);
+}
+#red_button:hover {
+    filter: brightness(90%);
+    cursor: pointer;
+}
+#red_button:active {
+    filter: brightness(80%);
+    cursor: pointer;
+}
+#yellow_button {
+    background-color: rgba(255, 205, 0, 1);
+}
+#yellow_button:hover {
+    filter: brightness(90%);
+    cursor: pointer;
+}
+#yellow_button:active {
+    filter: brightness(80%);
+    cursor: pointer;
+}
+#green_button {
+    background-color: rgba(0, 234, 59, 1);
+}
+#green_button:hover {
+    filter: brightness(90%);
+    cursor: pointer;
+}
+#green_button:active {
+    filter: brightness(80%);
+    cursor: pointer;
+}
+.buttons {
+    position: absolute;
+}
+.buttons div {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    border-radius: 100%;
+    float: left;
+    width: 16px;
+    height: 16px;
+}
+.crutch {
+    float: right;
+    height: 16px;
+    width: 72px;
+}
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-bottom: #fff 1px solid;
+    border-top: #f0f0f0 1px solid;
+}
+pre {
+    margin: 0 auto 20px;
+    padding: 20px;
+    color: #444;
+    font-weight: 500;
+    background: #fff;
+    border: #EEE 1px solid;
+    border-radius: 10px;
+    overflow: auto;
+}
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

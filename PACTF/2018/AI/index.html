@@ -1,0 +1,53 @@
+<html>
+<!-- Nothing here... -->
+<head>
+	<meta charset="UTF-8">
+	<title>PACTF</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/script.js" type="text/javascript"></script>
+	<script type="text/javascript" src="assets/js/typed.js" type="text/javascript"></script>
+	<script type="text/javascript" src="assets/js/baffle.min.js" type="text/javascript"></script>
+ 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/img/favicon.ico" rel="icon">
+</head>
+<body>
+	<div id="background_container"></div>
+	<div class="contents">
+        <div class="left">
+        	<div class="console">
+				<div class="title-bar">
+					<div class='buttons'>
+						<div id="red_button"></div>
+						<div id="yellow_button"></div>
+						<div id="green_button"></div>
+					</div>
+					<span class="title">Terminal</span>
+				</div>
+				<div class="text-body">
+				<span style="color:rgb(0, 172, 0)">anonymous@pactf.com </span>
+				<span style="color:rgb(142, 134, 0)">~<br></span>
+				<span id="cached"></span>
+				$ <span id="typed"></span>
+				<noscript><span>Please enable JavaScript!</span></noscript>
+				</div>
+			</div>
+		</div> 
+        <div class="right">
+        	<div id="book_content">
+        		<div id="header_text"></div>
+	    		<span id="book_content_cached"></span>
+	    		<span id="book_content_typed"></span>
+	    		<div id="dog_container" style="padding-top: 10px; display:none">
+		    		<img id="dog" src="assets/img/dog_picture.jpg" style="width: 25%">
+		    		<span id="this_is_dog" style="padding-top: 10px"><br>This is dog!<br><br></span>
+	    		</div>
+	    		<div id="cat_container" style="padding-top: 10px; display:none">
+		    		<img id="cat" src="assets/img/not_dog_picture.jpg" style="width: 25%">
+		    		<span id="this_is_cat" style="padding-top: 10px"><br>This is not dog!<br><br></span>
+	    		</div>
+	      	</div>
+        </div> 
+	</div>
+</body>
+</html>
